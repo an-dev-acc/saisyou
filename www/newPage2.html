@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+    <script>
+        //
+        // TODO: Write JavaScript code here
+        //
+        function modoru() {
+            window.location.href="index.html";  
+        }
+        function safari() {
+            //・_system:システム標準のWebブラウザを開く
+            window.open("http://192.168.50.116/cspmbl/ssmbl/login.csp","_system");
+        }
+    </script>
+</head>
+<body>
+    <!-- TODO: Please edit here -->
+    <p style="position:absolute;left:0px;top:30px;">最終ページです</p>
+    <iframe style="position:absolute;left:0px;top:80px;" src="http://192.168.5.106/workshop/NewPage1.csp"></iframe>
+    <button onclick="safari()" style="position:absolute;left:0px;top:260px;">safariでモバイルログインを開く</button>
+    <button onclick="modoru()" style="position:absolute;left:0px;top:300px;">戻る</button>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="components/loader.js"></script>
+    <script>
+        //
+        // TODO: Write JavaScript code here
+        //
+        function modoru() {
+            //0.5秒間振動させる
+            navigator.notification.vibrate(500);
+            var num=document.getElementById("colorList").selectedIndex;
+            var color=document.getElementById("colorList").options[num].text;
+            alert("『 "+color+" 』を選択しました");
+            window.location.href="index.html";  
+        }
+        function safari() {
+            //・_system:システム標準のWebブラウザを開く
+            window.open("http://192.168.50.116/cspmbl/ssmbl/login.csp","_system","");
+        }        
+    </script>
+</head>
+<body>
+    <!-- TODO: Please edit here -->
+    <p style="position:absolute;left:0px;top:10px;">新しい画面</p>
+    <img src="Sample.png" alt="" style="position:absolute;left:0px;top:50px;height:280px" />
+    <select id="colorList" style="position:absolute;left:0px;top:360px;width:120px">
+        <option value="1">赤</option>
+        <option value="2">青</option>
+        <option value="3">黄</option>        
+    </select>
+    <a href="newPage2.html" style="position:absolute;left:0px;top:390px">次の画面へ</a>
+    <!--<a href="http://192.168.5.106/workshop/NewPage1.csp" style="position:absolute;left:0px;top:440px;">CSPページへ</a>-->
+    <a href="" onclick="safari()" style="position:absolute;left:0px;top:440px;">safariでモバイルログインを開く</a>
+    <button onclick="modoru()" style="position:absolute;left:0px;top:490px;">戻る</button>
+</body>
+</html>
