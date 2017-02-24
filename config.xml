@@ -100,6 +100,6 @@
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="EnableViewportScale" value="false"/>
   <preference name="monaca:MonacaBackendUrl" value="https://cloud.monaca.mobi/json-rpc/"/>
-  <preference name="monaca:MonacaBackendId" value="58a27fa4ff2af20a020fd9fa"/>
-  <preference name="monaca:MonacaBackendApiKey" value="233bae59a77d97df3612b8c47740a9463a7f1003cf726201f3ed3b63595249f8"/>
+  <preference name="monaca:MonacaBackendId" value="58ae830cff2af2f47f115e73"/>
+  <preference name="monaca:MonacaBackendApiKey" value="504821a7fbd3053a9ffb20e0422777aef42585d49d48bbcac6e8a244c252f873"/>
 </widget>
