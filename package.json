@@ -17,5 +17,13 @@
         "cordova-plugin-splashscreen": "5.0.2",
         "cordova-custom-config": "5.1.0",
         "cordova-plugin-vibration": "3.1.0"
+    },
+    "scripts": {
+        "monaca:preview": "npm run dev",
+        "dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.24.5",
+        "cordova": "^9.0.0"
     }
 }
